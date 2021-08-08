@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 
-//Components
-import StarRating from "./components/StarRating";
+// import StarRating from "./components/StarRating/StarRating";
+import Reloj from "./components/Reloj/Reloj";
 
 function App() {
   return (
     <div className="container">
-      <StarRating totalStars={5} />
+      <Reloj />
     </div>
   );
 }
