@@ -1,0 +1,31 @@
+.Countdown-Container {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Countdown-Container h3 {
+  font-size: 32px;
+}
+
+.Countdown-Container p {
+  font-size: 48px;
+}
+.Countdown-Container .Container-Inputs {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Countdown-Container .Container-Inputs input {
+  width: 130px;
+  height: 30px;
+  padding-left: 8px;
+  font-size: 16px;
+}
