@@ -5,12 +5,13 @@ import "./App.css";
 // import Countdown from "./components/Countdown/Countdown";
 // import Counting from "./components/Counting/Counting";
 // import CounterHooks from "./components/CounterHooks/CounterHooks";
-import UseEffectDocs from "./components/UseEffect/UseEffectDocs";
+// import UseEffectDocs from "./components/UseEffect/UseEffectDocs";
+import RelojHooks from "./components/RelojHooks/RelojHooks";
 
 function App() {
   return (
     <div className="container">
-      <UseEffectDocs />
+      <RelojHooks />
     </div>
   );
 }
