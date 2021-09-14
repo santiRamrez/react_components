@@ -6,12 +6,14 @@ import "./App.css";
 // import Counting from "./components/Counting/Counting";
 // import CounterHooks from "./components/CounterHooks/CounterHooks";
 // import UseEffectDocs from "./components/UseEffect/UseEffectDocs";
-import RelojHooks from "./components/RelojHooks/RelojHooks";
+// import RelojHooks from "./components/RelojHooks/RelojHooks";
+// import HooksApi from "./components/HooksApi/HooksApi";
+import UsingCustomHook from "./components/UsingCustomHook/UsingCustomHook";
 
 function App() {
   return (
     <div className="container">
-      <RelojHooks />
+      <UsingCustomHook />
     </div>
   );
 }
