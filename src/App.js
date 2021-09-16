@@ -8,12 +8,13 @@ import "./App.css";
 // import UseEffectDocs from "./components/UseEffect/UseEffectDocs";
 // import RelojHooks from "./components/RelojHooks/RelojHooks";
 // import HooksApi from "./components/HooksApi/HooksApi";
-import UsingCustomHook from "./components/UsingCustomHook/UsingCustomHook";
+// import UsingCustomHook from "./components/UsingCustomHook/UsingCustomHook";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
     <div className="container">
-      <UsingCustomHook />
+      <Form />
     </div>
   );
 }
