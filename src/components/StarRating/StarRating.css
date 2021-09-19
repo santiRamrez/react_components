@@ -1,6 +1,6 @@
 .starRating {
-  width: 400px;
-  height: 100px;
+  width: 350px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,7 +10,7 @@
 .starSVG {
   margin: 10px;
   width: 50px;
-  height: 70px;
+  height: 50px;
 }
 
 .starRating p {
