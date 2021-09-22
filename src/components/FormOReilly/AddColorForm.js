@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useInput } from "../../hooks/useInput";
 
 //Uncontrolled Component
 // const AddColorForm = ({ onNewColor = (f) => f }) => {
@@ -24,32 +25,59 @@ import React, { useState } from "react";
 // };
 
 //Controlled Component
+// const AddColorForm = ({ onNewColor = (f) => f }) => {
+//   const [title, setTitle] = useState("");
+//   const [color, setColor] = useState("#000000");
+
+//   const submit = (e) => {
+//     e.preventDefault();
+//     onNewColor(title, color);
+//     setTitle("");
+//     setColor("");
+//   };
+
+//   return (
+//     <form onSubmit={submit}>
+//       <input
+//         type="text"
+//         onChange={(e) => setTitle(e.target.value)}
+//         value={title}
+//         placeholder="color title..."
+//         required
+//       />
+//       <input
+//         type="color"
+//         onChange={(e) => setColor(e.target.value)}
+//         value={color}
+//         required
+//       />
+//       <button>ADD</button>
+//     </form>
+//   );
+// };
+
+//Controlled Component with Custom Hook
 const AddColorForm = ({ onNewColor = (f) => f }) => {
-  const [title, setTitle] = useState("");
-  const [color, setColor] = useState("#000000");
+  const [titleProps, resetTitle] = useInput("");
+  const [colorProps, resetColor] = useInput("#000000");
 
   const submit = (e) => {
     e.preventDefault();
+    let [title, color] = [titleProps.value, colorProps.value];
     onNewColor(title, color);
-    setTitle("");
-    setColor("");
+    resetColor();
+    resetTitle();
   };
 
   return (
     <form onSubmit={submit}>
       <input
         type="text"
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
+        {...titleProps}
         placeholder="color title..."
         required
       />
-      <input
-        type="color"
-        onChange={(e) => setColor(e.target.value)}
-        value={color}
-        required
-      />
+      <input type="color" {...colorProps} required />
       <button>ADD</button>
     </form>
   );
